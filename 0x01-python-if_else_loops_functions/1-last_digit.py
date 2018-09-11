@@ -9,6 +9,6 @@ if last > 5:
     final = greater
 elif last < 6 and not 0:
     final = lesser
-elif last == 0:
+elif last is 0:
     final = equal
 print("Last digit of", number, "is", last, final)
