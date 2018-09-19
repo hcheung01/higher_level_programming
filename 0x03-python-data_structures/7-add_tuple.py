@@ -6,6 +6,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
     elif len(tuple_b) < 2:
         tuple_b = tuple_b + (0,)
     for i, j in zip(tuple_a, tuple_b):
-        sum = i + j
-        tup = tup + (sum,)
-    return (tup)
+        tup = tup + (i + j,)
+    final = (tup[0], tup[1])
+    return (final)
