@@ -9,6 +9,7 @@ def roman_to_int(roman_string):
                 for k, v in num.items():
                     if i is k:
                         total = total + v
+                        break
         else:
             total = 9
     return (total)
