@@ -44,9 +44,8 @@ class Square:
         """prints to stdout square with the char #"""
         if not self.__size:
             print()
-        if self.postion[1]:
+        for i in range(self.postion[1]):
             print()
-
         for row in range(self.__size):
             for col in range(self.__size):
                 print("{}".format('#'), end="")
