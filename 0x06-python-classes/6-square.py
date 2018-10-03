@@ -30,7 +30,7 @@ class Square:
     def position(self, value):
         if type(value) == tuple:
             if len(value) == 2:
-                if value[0] and value[1] == int:
+                if type(value[0]) and type(value[1]) == int:
                     if value[0] and value[1]:
                         self.__position = value
         else:
