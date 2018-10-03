@@ -49,12 +49,10 @@ class Square:
         """prints to stdout square with the char #"""
         if self.size == 0:
             print()
-        if self.position[1]:
-            print()
-        for row in range(self.__size):
-            if self.position[1] < 1:
-                for space in range(self.position[0]):
-                    print("{}".format(' '), end="")
-            for col in range(self.__size):
-                print("{}".format('#'), end="")
-            print()
+        else:
+            a, b = self.position
+            for line in range(b):
+                print()
+            for line in range(self.size):
+                print(' ' * a, end='')
+                print('#' * self.size)
