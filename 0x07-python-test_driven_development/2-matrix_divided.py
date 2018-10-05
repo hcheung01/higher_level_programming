@@ -1,6 +1,18 @@
 #!/usr/bin/python3
+"""
+Matrix Manipulation
+"""
+
 def matrix_divided(matrix, div):
-    """divide elements of matrix by div"""
+    """Divide all elements of the matrix
+    Parameters:
+    matrix = matrix
+    div = integer dividing elements
+
+    Local Args:
+    new = list of lists
+    array = lists with new elements
+    """
 
     if not isinstance(div, (int, float)):
         raise TypeError('div must be a number')
@@ -9,9 +21,8 @@ def matrix_divided(matrix, div):
 
     new = []
     array = []
-    previous = len(matrix[0])
     for row in matrix:
-        if len(row) != previous:
+        if len(row) != len(matrix[0]):
             raise TypeError('Each row of the matrix must have the same size')
         if not all(row) and all(matrix[row]) is False:
             raise TypeError(
