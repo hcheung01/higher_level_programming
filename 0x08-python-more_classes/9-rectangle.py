@@ -71,6 +71,7 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """returns a new Rectangle instance with size for width and height"""
+        cls.number_of_instances += 1
         return Rectangle(size, size)
 
     def __str__(self):
