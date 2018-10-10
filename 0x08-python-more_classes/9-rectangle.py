@@ -73,7 +73,8 @@ class Rectangle:
         """returns a new Rectangle instance with size for width and height"""
         if size:
             return cls(size, size)
-        return
+        else:
+            pass
 
     def __str__(self):
         """method string object"""
