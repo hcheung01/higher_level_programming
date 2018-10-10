@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-"""
-Rectangle Class
-"""
-
+"""Class Rectangle"""
 
 
 class Rectangle:
     """Class of Rectangle"""
-
 
     number_of_instances = 0
     print_symbol = "#"
