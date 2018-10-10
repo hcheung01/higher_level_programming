@@ -27,11 +27,6 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Setter Method of width
-        Args:
-            value(int): width of square
-        Raises:
-            TypeError: if width is not integer
-            ValueError: if width is less than zero
         """
         if not isinstance(value, int):
             raise TypeError('width must be an integer')
@@ -52,11 +47,6 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Sets the height of the rectangle
-        Args:
-            value(int): height of square
-        Raises:
-            TypeError: if height is not an integer
-            ValueError: if height is less than zero
         """
         if not isinstance(value, int):
             raise TypeError('height must be an integer')
