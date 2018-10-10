@@ -1,17 +1,28 @@
 #!/usr/bin/python3
-"""
-Rectangle Class
-"""
+"""Rectangle Class"""
+
+
 class Rectangle:
     """class defined"""
+
     def __init__(self, width=0, height=0):
-        """Initialization method"""
+        """Initialization method
+        Args:
+            width: width of rectangle
+            height: height of rectangle
+        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Setter Method of width"""
+        """Setter Method of width
+        Args:
+            value(int): width of square
+        Raises:
+            TypeError: if width is not integer
+            ValueError: if width is less than zero
+        """
         return self.__width
 
     @width.setter
@@ -25,7 +36,13 @@ class Rectangle:
 
     @property
     def height(self):
-        """Setter Method of height"""
+        """Sets the height of the rectangle
+        Args:
+            value(int): height of square
+        Raises:
+            TypeError: if height is not an integer
+            ValueError: if height is less than zero
+        """
         return self.__height
 
     @height.setter
