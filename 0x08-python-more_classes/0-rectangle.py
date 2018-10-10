@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""
-Class Module
-"""
+""" Empty Class Module """
+
+
 class Rectangle:
-"""Class of Rectangle"""
+    """Class of Rectangle"""
     pass
