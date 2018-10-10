@@ -3,6 +3,7 @@
 Rectangle Class
 """
 
+
 class Rectangle:
     """class defined"""
 

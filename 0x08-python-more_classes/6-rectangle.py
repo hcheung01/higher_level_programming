@@ -2,8 +2,11 @@
 """
 Rectangle Class
 """
+
+
 class Rectangle:
     """Class of Rectangle"""
+
     number_of_instances = 0
 
     """class defined"""
