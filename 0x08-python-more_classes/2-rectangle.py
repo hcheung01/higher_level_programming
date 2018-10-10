@@ -2,8 +2,11 @@
 """
 Rectangle Class
 """
+
+
 class Rectangle:
-    """class defined"""
+    """class defined
+    """
 
     def __init__(self, width=0, height=0):
         """Initialization method"""
