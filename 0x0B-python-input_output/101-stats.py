@@ -23,7 +23,7 @@ for line in sys.stdin:
     totalcount += 1
     if totalcount == 10:
         sortme = sorted(dictstatus.keys())
-        print("File size: ", totalsize)
+        print("File size:", totalsize)
         for keys in sortme:
             print("{}: {}".format(keys, dictstatus[keys]))
         totalcount = 0
