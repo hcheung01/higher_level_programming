@@ -46,9 +46,7 @@ class Base:
         return:
             return serialized list or empty list
         """
-        if list_dictionaries:
-            return json.dumps(list_dictionaries)
-        return []
+        return json.dumps(list_dictionaries)
 
     @staticmethod
     def from_json_string(json_string):
