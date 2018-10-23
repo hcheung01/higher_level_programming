@@ -68,9 +68,10 @@ class Base:
         return:
             na
         """
-        if list_objs is None:
-            j = cls.to_json_string([])
-        j = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+        if list_objs:
+            j = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+        else:
+            j = '[]'
         with open(cls.__name__ + '.json', 'w') as f:
             f.write(j)
 
