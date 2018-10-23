@@ -35,25 +35,21 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """returns JSON string"""
-        if list_dictionaries is None:
-            return ([])
-        return json.dumps(list_dictionaries)
+        return json.dumps(list_dictionaries or [])
 
     @staticmethod
     def from_json_string(json_string):
         """json to string static method"""
-        if json_string is None:
-            return ([])
-        return json.loads(json_string)
+        return json.loads(json_string or [])
 
     @classmethod
     def save_to_file(cls, list_objs):
         """writes JSON string to a file"""
-        jsonstr = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
-        if jsonstr is None:
-            jsonstr = '[]'
+        j = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+        if j is None:
+            j = '[]'
         with open(cls.__name__ + '.json', 'w') as f:
-            f.write(jsonstr)
+            f.write(j)
 
     @classmethod
     def create(cls, **dictionary):
@@ -72,6 +68,4 @@ class Base:
             dictss = cls.from_json_string(f.read())
             if dictss:
                 listme = [cls.create(**x) for x in dictss]
-                return listme
-            else:
-                return []
+        return (listme or [])
