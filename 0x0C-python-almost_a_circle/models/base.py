@@ -1,17 +1,22 @@
 #!/usr/bin/python3
-import json
 """
 Class Module
 """
-
+import json
 
 class Base:
-    """ base class"""
-
+    """ base class
+    Attributes:
+        _nb_objects: number of objects created
+        id: id of object
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """initiation method"""
+        """initiation method
+        args:
+            id: id of object
+        """
         if id is not None:
             self.id = id
         else:
@@ -34,17 +39,36 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """returns JSON string"""
-        return json.dumps(list_dictionaries or [])
+        """returns JSON string
+        args:
+            list_dictionaries: list of dictionaries
+        return:
+            return serialized list or empty list
+        """
+        if list_dictionaries:
+            return json.dumps(list_dictionaries)
+        return []
 
     @staticmethod
     def from_json_string(json_string):
-        """json to string static method"""
-        return json.loads(json_string or [])
+        """json to string static method
+        args:
+            json_string: json object string type
+        return:
+            list of json strings
+        """
+        if json_string:
+            return json.loads(json_string)
+        return []
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """writes JSON string to a file"""
+        """writes JSON string to a file
+        args:
+            list_objs: list of objects
+        return:
+            na
+        """
         j = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
         if j is None:
             j = '[]'
@@ -53,19 +77,28 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """return instance with all attributes set"""
+        """return instance with all attributes set
+        args:
+            dictionary: double pointer
+        return:
+            instance with set attribute
+        """
         if cls.__name__ == "Rectangle":
             dummy = cls(1, 1)
-        elif cls.__name__ == "Square":
+        if cls.__name__ == "Square":
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
 
     @classmethod
     def load_from_file(cls):
-        '''Returns a list of instances'''
+        '''Returns a list of instances
+        return:
+            list of instance json string
+        '''
         with open(cls.__name__ + '.json') as f:
             dictss = cls.from_json_string(f.read())
             if dictss:
                 listme = [cls.create(**x) for x in dictss]
-        return (listme or [])
+                return listme
+        return []
