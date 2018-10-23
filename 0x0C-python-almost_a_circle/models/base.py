@@ -71,5 +71,7 @@ class Base:
         with open(cls.__name__ + '.json') as f:
             dictss = cls.from_json_string(f.read())
             if dictss:
-                return [cls.create(**x) for x in dictss]
-            return []
+                listme = [cls.create(**x) for x in dictss]
+                return listme
+            else:
+                return []
