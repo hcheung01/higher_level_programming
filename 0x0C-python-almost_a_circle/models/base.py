@@ -96,8 +96,10 @@ class Base:
         return:
             list of instance json string
         '''
-        with open(cls.__name__ + '.json', mode='r') as f:
-            if f is None:
-                return []
-            dictss = cls.from_json_string(f.read())
-            return [cls.create(**x) for x in dictss]
+        try:
+            filename = cls.__name__ + '.json'
+            with open(filename, mode='r') as f:
+                d = cls.from_json_string(f.read())
+            return [cls.create(**x) for x in d]
+        except FileNotFoundError:
+            return []
