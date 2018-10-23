@@ -98,5 +98,6 @@ class Base:
         '''
         with open(cls.__name__ + '.json', mode='r') as f:
             dictss = cls.from_json_string(f.read())
-            return [cls.create(**x) for x in dictss]
+            if dictss:
+                return [cls.create(**x) for x in dictss]
         return []
