@@ -4,6 +4,7 @@ Class Module
 """
 from models.base import Base
 
+
 class Rectangle(Base):
     """Rectangle subclass"""
 
@@ -36,17 +37,17 @@ class Rectangle(Base):
         for row in range(self.y):
             print()
         for row in range(self.height):
-            print(' ' * self.x ,'#' * self.width)
+            print(' ' * self.x, '#' * self.width)
 
     def __str__(self):
         """print method"""
-        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,\
-                                                self.id, self.__x, self.__y,\
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                self.id, self.__x, self.__y,
                                                 self.__width, self.__height)
 
     def to_dictionary(self):
         """return dict representation of Rectangle"""
-        return {'x': self.x, 'y': self.y, 'id': self.id,\
+        return {'x': self.x, 'y': self.y, 'id': self.id,
                 'height': self.height, 'width': self.width}
 
     @property
