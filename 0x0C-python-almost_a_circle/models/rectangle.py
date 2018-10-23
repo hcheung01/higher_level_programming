@@ -9,7 +9,14 @@ class Rectangle(Base):
     """Rectangle subclass"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """instance initialization method"""
+        """instance initialization method
+
+        args:
+            width: width of rectangle
+            height: height of rectangle
+            x: init variable
+            y: init variable
+        """
         super().__init__(id)
         self.width = width
         self.height = height
@@ -33,11 +40,13 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def display(self):
-        """print into stdout"""
+        """print into stdout
+        return: na
+        """
         for row in range(self.y):
             print()
         for row in range(self.height):
-            print(' ' * self.x, '#' * self.width)
+            print("{}{}".format(" " * self.x, self.width))
 
     def __str__(self):
         """print method"""
