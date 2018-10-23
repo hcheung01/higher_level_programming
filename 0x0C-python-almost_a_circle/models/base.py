@@ -4,6 +4,7 @@ Class Module
 """
 import json
 
+
 class Base:
     """ base class
     Attributes:
