@@ -96,9 +96,7 @@ class Base:
         return:
             list of instance json string
         '''
-        with open(cls.__name__ + '.json') as f:
+        with open(cls.__name__ + '.json', mode='r') as f:
             dictss = cls.from_json_string(f.read())
-        if dictss:
-            listme = [cls.create(**x) for x in dictss]
-            return listme
+            return [cls.create(**x) for x in dictss]
         return []
