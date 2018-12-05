@@ -8,5 +8,5 @@ WHERE tv_genres.name NOT IN
       ON b.genre_id = a.id
       JOIN tv_shows AS c
       ON b.show_id = c.id
-      WHERE c.title = 'Dexter'
-      ORDER BY a.name ASC);
+      WHERE c.title = 'Dexter')
+ORDER BY tv_genres.name ASC;
