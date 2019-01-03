@@ -15,7 +15,7 @@ def main():
     c = db.cursor()
 
     # execute query
-    c.execute("SELECT * FROM states WHERE name = '{:s}'\
+    c.execute("SELECT * FROM states WHERE BINARY name = '{:s}'\
     ORDER BY id ASC".format(argv[4]))
 
     # fetch
