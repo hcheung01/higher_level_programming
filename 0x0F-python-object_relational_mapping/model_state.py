@@ -9,6 +9,7 @@ from sqlalchemy.ext.declarative import declarative_base
 # declare new mapping
 Base = declarative_base()
 
+
 # map class to inherit from Base
 class State(Base):
     """mapped class definition"""
