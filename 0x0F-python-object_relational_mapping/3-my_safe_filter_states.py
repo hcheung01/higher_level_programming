@@ -11,8 +11,7 @@ def main():
                              port=3306,
                              user=argv[1],
                              passwd=argv[2],
-                             db=argv[3]
-        )
+                             db=argv[3])
         # cursor
         c = db.cursor()
 
