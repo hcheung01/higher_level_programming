@@ -2,6 +2,7 @@
 '''Script to list all states with a name starting with N'''
 import MySQLdb
 
+
 def main():
     # connect
     db = MySQLdb.connect(host='localhost',

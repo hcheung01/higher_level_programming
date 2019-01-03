@@ -2,6 +2,7 @@
 """Filter states by user input"""
 import MySQLdb
 
+
 def main():
 
     # connect
@@ -9,13 +10,13 @@ def main():
                          port=3306,
                          user=argv[1],
                          passwd=argv[2],
-                         db=argv[3]
-    )
+                         db=argv[3])
     # cursor
     c = db.cursor()
 
     # execute query
-    c.execute("SELECT * FROM states WHERE name = '{:s}' ORDER BY id ASC".format(argv[4]))
+    c.execute("SELECT * FROM states WHERE name = '{:s}'\
+    ORDER BY id ASC".format(argv[4]))
 
     # fetch
     rows = c.fetchall()
