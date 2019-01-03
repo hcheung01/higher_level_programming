@@ -8,7 +8,6 @@ if __name__ == "__main__":
     from model_state import Base, State
     from sqlalchemy.engine.url import URL
 
-
     db = {'drivername': 'mysql+mysqldb',
           'host': 'localhost',
           'port': '3306',
@@ -23,6 +22,6 @@ if __name__ == "__main__":
     session = Session(engine)
 
     for state in session.query(State).order_by(State.id).all():
-        print("{}".format(state.name))
+        print("{}: {}".format(state.id, state.name))
 
     session.close()
