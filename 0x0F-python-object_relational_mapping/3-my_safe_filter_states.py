@@ -2,6 +2,7 @@
 """Filter states by user input"""
 import MySQLdb
 
+
 def main():
 
     if len(argv) == 5:
@@ -16,7 +17,8 @@ def main():
         c = db.cursor()
 
         # execute query
-        c.execute("SELECT * FROM states WHERE name = %s ORDER BY states.id ASC", (argv[4], ))
+        c.execute("SELECT * FROM states WHERE BINARY name = %s\
+        ORDER BY states.id ASC", (argv[4], ))
 
         # fetch
         rows = c.fetchall()
