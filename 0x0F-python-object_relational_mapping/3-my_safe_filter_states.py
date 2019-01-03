@@ -17,7 +17,7 @@ def main():
         c = db.cursor()
 
         # execute query
-        c.execute("SELECT * FROM states WHERE BINARY name = %s\
+        c.execute("SELECT * FROM states WHERE name = %s\
         ORDER BY states.id ASC", (argv[4], ))
 
         # fetch
