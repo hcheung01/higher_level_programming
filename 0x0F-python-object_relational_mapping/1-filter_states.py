@@ -5,6 +5,10 @@ import MySQLdb
 
 def main():
     # connect
+
+    if len(argv) != 4:
+        return
+
     db = MySQLdb.connect(host='localhost',
                          port=3306,
                          user=argv[1],
