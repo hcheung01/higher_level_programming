@@ -25,9 +25,8 @@ if __name__ == "__main__":
     # session
     session = Session(engine)
 
-    # query and print
-    for state in session.query(State).filter(State.id == 1):
-        print("{}: {}".format(state.id, state.name))
+    first = session.query(State).filter(State.id == 1).scalar()
+    print("{}: {}".format(first.id, first.name))
 
     # close
     session.close()
