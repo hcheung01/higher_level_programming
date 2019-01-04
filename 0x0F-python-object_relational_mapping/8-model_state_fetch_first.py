@@ -25,7 +25,7 @@ if __name__ == "__main__":
     # session
     session = Session(engine)
 
-    first = session.query(State).filter(State.id == 1).scalar()
+    first = session.query(State).first()
     print("{}: {}".format(first.id, first.name))
 
     # close
