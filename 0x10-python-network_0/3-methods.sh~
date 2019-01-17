@@ -1,0 +1,2 @@
+#!/bin/bash
+# takes in a URL and displays all HTTP methods the service will accept
