@@ -1,3 +1,3 @@
 #!/bin/bash
 # takes in a URL and displays all HTTP methods the service will accept
-curl -sI "$1" -X a | grep Allow | cut -d" " -f2-
+curl -sI "$1" | grep "Allow:" | cut -d" " -f2-
