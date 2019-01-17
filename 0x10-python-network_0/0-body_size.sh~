@@ -1,6 +1,0 @@
-#!/bin/bash
-# Takes in a URL, sends a request to that URL
-# and display the size of body of response
-if "$1"; then
-    curl "$1" 
-fi
