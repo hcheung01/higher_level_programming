@@ -10,10 +10,10 @@ def find_peak(list_of_integers):
     if not len(list_of_integers):
         return None
 
-    big = 0
+    biggest = 0
     for i in range(len(list_of_integers)):
-        if list_of_integers[i] > big:
-            big = list_of_integers[i]
-            if list_of_integers[i+1] and list_of_integers[i+1] <= big:
+        if list_of_integers[i] > biggest:
+            biggest = list_of_integers[i]
+            if list_of_integers[i+1] and list_of_integers[i+1] <= biggest:
                 return list_of_integers[i]
-    return big
+    return biggest
