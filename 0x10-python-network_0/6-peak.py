@@ -4,16 +4,21 @@ Peak Module
 """
 
 
+def divide(array, low, high):
+    """divide and conquer"""
+
+    mid = int((high + low)/2)
+    if array[mid-1] <= array[mid] >= array[mid+1]:
+        return array[mid]
+    elif array[mid] > array[mid+1]:
+        return divide(array, low, mid-1)
+    elif array[mid] < array[mid+1]:
+        return divide(array, mid+1, high)
+
+
 def find_peak(list_of_integers):
     """Find peak of a list"""
 
-    if not len(list_of_integers):
+    if not list_of_integers:
         return None
-
-    biggest = 0
-    for i in range(len(list_of_integers)):
-        if list_of_integers[i] > biggest:
-            biggest = list_of_integers[i]
-            if list_of_integers[i+1] and list_of_integers[i+1] <= biggest:
-                return list_of_integers[i]
-    return biggest
+    return divide(list_of_integers, 0, len(list_of_integers)-1)
