@@ -12,7 +12,7 @@ def divide(array, low, high):
         return array[mid]
     elif array[mid] > array[mid+1]:
         return divide(array, low, mid-1)
-    elif array[mid] < array[mid+1]:
+    else:
         return divide(array, mid+1, high)
 
 
