@@ -10,9 +10,10 @@ if __name__ == '__main__':
 
     try:
         req = requests.get(argv[1])
-        if req:
+        if req.status_code == 200:
             print(req.text)
-        elif req.status_code >= 400:
-            print("Error code: {}".format(req.status_code))
     except KeyError:
         pass
+    else:
+        if req.status_code >= 400:
+            print("Error code: {}".format(req.status_code))
