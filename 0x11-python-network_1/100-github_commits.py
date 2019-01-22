@@ -13,5 +13,5 @@ if __name__ == '__main__':
     r = requests.get('https://api.github.com/repos/{}/{}/commits'.format(name,
                                                                          repo))
     for li in range(10):
-        print(r.json()[li].get('commit').get('author').get('date'),
+        print("{}:".format(r.json()[li].get('sha')),
               r.json()[li].get('commit').get('author').get('name'))
