@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 script to take in a URL input, sends a request to the URL, display response
 """
