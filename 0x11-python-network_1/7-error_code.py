@@ -8,8 +8,8 @@ if __name__ == '__main__':
     from sys import argv
     import requests
 
-    req = requests.get(argv[1])
-    if req.status_code >= 400:
+    try:
+        req = requests.get(argv[1])
+        print(req.text)
+    except requests.raise_for_status():
         print("Error code: {}".format(req.status_code))
-    else:
-        print(page.text)
