@@ -14,5 +14,6 @@ if __name__ == '__main__':
                                                                          repo))
     for l in range(10):
         dicts = r.json()[l]
-        print("{}: {}".format(dicts.get('sha'),
-                              dicts.get('commit').get('author').get('name')))
+        author = dicts.get('commit').get('author').get('name')
+        sha = dicts.get('sha')
+        print("{}: {}".format(sha, author))
