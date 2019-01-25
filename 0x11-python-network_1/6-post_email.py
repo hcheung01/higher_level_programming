@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that takes in a URL, email address, sends a POST request with email param
+Takes in a URL, email address, sends a POST request with email param
 """
 
 
