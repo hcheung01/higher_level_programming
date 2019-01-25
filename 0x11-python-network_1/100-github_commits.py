@@ -8,13 +8,12 @@ if __name__ == '__main__':
     import requests
     from sys import argv
 
-    if (len(argv) == 3):
-        name = argv[2]
-        repo = argv[1]
-        r = requests.get('https://api.github.com/repos/{}/{}/commits'
-                         .format(name, repo))
-        r = r.json()
-        for i in range(10):
-            name = r[i]['commit']['author']['name']
-            sha = r[i]['sha']
-            print("{}: {}".format(sha, name))
+    name = argv[2]
+    repo = argv[1]
+    params = {'per_page': 10}
+    r = requests.get('https://api.github.com/repos/{}/{}/commits'
+                     .format(name, repo), params=params)
+    r = r.json()
+    for arg in r:
+        print("{}: {}".format(arg.get('sha'),
+                              arg.get('commit').get('author').get('name')))
