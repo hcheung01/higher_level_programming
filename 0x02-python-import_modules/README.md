@@ -15,18 +15,26 @@ This project in the High Level Programming series is about:
 ---
 File|Task
 ---|---
-0-add.py
-1-calculation.py
-2-args.py
-3-infinite_add.py
-4-hidden_discovery.py
-5-variable_load.py
+0-add.py | imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
+1-calculation.py | imports functions from the file calculator_1.py, does some Maths, and prints the result
+2-args.py | prints the number of and the list of its arguments
+3-infinite_add.py | program that prints the result of the addition of all arguments
+4-hidden_discovery.py | program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally)
+5-variable_load.py | imports the variable a from the file variable_load_5.py and prints its value
+100-my_calculator.py | imports all functions from the file calculator_1.py and handles basics operations
+101-easy_print.py | prints #pythoniscool, followed by a new line, in the standard output
+102-magic_calculation.py | Python function that does exactly the same as a provided Python bytecode
+103-fast_alphabet.py | prints the alphabet in uppercase, followed by a new line
 
 ## Directories
 ---
 Directory Name | Description
 ---|---
-0x02-python-import_modules
+0x02-python-import_modules | Main folder with all python scripts
+
+## More Info for Python programs
+* All Python files is PEP 8(version 1.7) formatted
+* Python Scripts - first line of every file is exactly be exactly #!/usr/bin/python3 and executable
 
 ## Author
 Heindrick Cheung
