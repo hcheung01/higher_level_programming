@@ -40,10 +40,10 @@ Directory Name | Description
 0x00-python-hello_world | Holds all the .py files and .c files
 
 ## More Info
-All Python files is PEP 8(version 1.7) formatted
-Python Scripts - first line of every file is exactly be exactly #!/usr/bin/python3 and executable
-All files is formatted Betty style and checked using betty-style.pl and betty-doc.pl
-All header files is guarded
+* All Python files is PEP 8(version 1.7) formatted
+* Python Scripts - first line of every file is exactly be exactly #!/usr/bin/python3 and executable
+* All files is formatted Betty style and checked using betty-style.pl and betty-doc.pl
+* All header files is guarded
 
 ## Author
 Heindrick Cheung
