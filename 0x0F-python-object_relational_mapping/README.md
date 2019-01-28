@@ -9,11 +9,11 @@ This project in the High Level Programming series is about:
 * What ORM means
 * Mapping a Python Class to a MySQL table
 
-## Languages and Technologies used
-Python3 and scripting
-MySQL
-MySQLdb
-SQLAlchemy
+## Languages and Concepts used
+* Python3 scripting
+* MySQL
+* MySQLdb
+* SQLAlchemy
 
 ## Files
 ---
@@ -40,6 +40,11 @@ model_city.py, 14-model_city_fetch_by_state.py | classes definition
 Directory Name | Description
 ---|---
 0x0F-python-object_relational_mapping | Main folder with all Python files
+
+## More Info for Python programs
+* All Python files is PEP 8(version 1.7) formatted
+* All modules, classes and functions(inside and outside a class) have documentations
+* Python Scripts - first line of every file is exactly be exactly #!/usr/bin/python3 and executable
 
 ## Author
 Heindrick Cheung
