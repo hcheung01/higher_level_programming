@@ -34,5 +34,15 @@ tests/ | Contains a directory for testing models
 tests/test_models/ | Contains all files that are used to test the models
 models/ | Contains all the model files
 
+## More Info for Python programs
+* All Python files is PEP 8(version 1.7) formatted
+* All modules, classes and functions(inside and outside a class) have documentations
+* Python Scripts - first line of every file is exactly be exactly #!/usr/bin/python3 and executable
+
+## Python Unittesting
+* All test files and folders should start with test_
+* All test files can be executed by using this command: python3 -m unittest discover tests
+* All test files in located in /tests folder
+
 ## Author
 Heindrick Cheung
