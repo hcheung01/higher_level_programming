@@ -35,6 +35,8 @@ File|Task
 12-student.py | class Student that defines a student by: (based on 11-student.py)
 13-student.py | class Student that defines a student by: (based on 12-student.py)
 14-pascal_triangle.py | function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n
+100-append_after.py | function that inserts a line of text to a file, after each line containing a specific string 
+101-stats.py | script that reads stdin line by line and computes metrics
 
 ## Directories
 ---
