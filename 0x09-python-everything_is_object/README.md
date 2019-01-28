@@ -19,10 +19,10 @@ This project in the High Level Programming series is about:
 
 ## Files
 ---
-File|Task
+File|Question
 ---|---
-0-answer.txt
-1-answer.txt
+0-answer.txt | What function would you use to print the type of an object?
+1-answer.txt | How do you get the variable identifier (which is the memory address in the CPython implementation)?
 2-answer.txt
 3-answer.txt
 4-answer.txt
@@ -40,7 +40,7 @@ File|Task
 16-answer.txt
 17-answer.txt
 18-answer.txt
-19-copy_list.py
+19-copy_list.py | function def copy_list(l): that returns a copy of a list
 20-answer.txt
 21-answer.txt
 22-answer.txt
@@ -50,12 +50,31 @@ File|Task
 26-answer.txt
 27-answer.txt
 28-answer.txt
+100-magic_string.py | function magic_string() that returns a string “Holberton” n times the number of the iteration 
+101-locked_class.py | class LockedClass with no class or object attribute, that prevents the user from dynamically creating new instance attributes, except if the new instance attribute is called first_name
+103-line1.txt, 103-line2.txt
+104-line1.txt, 104-line2.txt, 104-line3.txt, 104-line4.txt, 104-line5.txt
+105-line1.txt
+106-line1.txt, 106-line2.txt, 106-line3.txt, 106-line4.txt, 106-line5.txt
 
 ## Directories
 ---
 Directory Name | Description
 ---|---
 0x09-python-everything_is_object | all main files
+
+## .txt
+* All text files is answers to questions from a project about Python objects
+
+## For Python programs
+* All Python files is PEP 8(version 1.7) formatted
+* All modules, classes and functions(inside and outside a class) have documentations
+* Python Scripts - first line of every file is exactly be exactly #!/usr/bin/python3 and executable
+
+## For Python Test Cases
+* All tests should be executed by using this command: python3 -m doctest ./tests/*
+* All test files is inside a folder tests
+* All test files is text files (extension: .txt)
 
 ## Author
 Heindrick Cheung
