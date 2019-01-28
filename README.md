@@ -1,12 +1,10 @@
-## Holberton Higher Level programming track
+## Higher-Level programming track at Holberton School focusing on:
+Python
+Databases
+AirBnB clone
 
 ## About
 This repository is one of the several tracks that I've been learning to become a Full Stack Software Engineer at Holberton School and below is a tree that displays files in this directory:
-
-## Major Focus for this track
-* Python and different modules
-* Databases
-* cloning a website full stack
 
 ## Author
 All files are maintained and owned by Heindrick Cheung
