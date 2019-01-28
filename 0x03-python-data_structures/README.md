@@ -3,7 +3,6 @@
 ## Description
 
 This project in the High Level Programming series is about:
-* Why Python programming is awesome
 * What are lists and how to use them
 * What are the differences and similarities between strings and lists
 * What are the most common methods of lists and how to use them
@@ -20,27 +19,36 @@ This project in the High Level Programming series is about:
 ---
 File|Task
 ---|---
-0-print_list_integer.py
-1-element_at.py
-2-replace_in_list.py
-3-print_reversed_list_integer.py
-4-new_in_list.py
-5-no_c.py
-6-print_matrix_integer.py
-7-add_tuple.py
-8-multiple_returns.py
-9-max_integer.py
-10-divisible_by_2.py
-11-delete_at.py
-12-switch.py
-13-is_palindrome.c
-lists.h
+0-print_list_integer.py | prints all integers of a list
+1-element_at.py | retrieves an element from a list like in C
+2-replace_in_list.py | replaces an element of a list at a specific position (like in C)
+3-print_reversed_list_integer.py | prints all integers of a list, in reverse order
+4-new_in_list.py | replaces an element in a list at a specific position without modifying the original list
+5-no_c.py | removes all characters c and C from a string
+6-print_matrix_integer.py | prints a matrix of integers
+7-add_tuple.py | adds 2 tuples
+8-multiple_returns.py | returns a tuple with the length of a string and its first character
+9-max_integer.py | finds the biggest integer of a list
+10-divisible_by_2.py | finds all multiples of 2 in a list
+11-delete_at.py | deletes the item at a specific position in a list
+12-switch.py | source code in order to switch value of a and b
+13-is_palindrome.c | Linked list palindrome - function in C that checks if a singly linked list is a palindrome
+lists.h | header file for C programs
 
 ## Directories
 ---
 Directory Name | Description
 ---|---
 0x03-python-data_structures | all files for this project
+
+## More Info for Python programs
+* All Python files is PEP 8(version 1.7) formatted
+* Python Scripts - first line of every file is exactly be exactly #!/usr/bin/python3 and executable
+
+## More Info for C programs
+* All C files is formatted Betty style and checked using betty-style.pl and betty-doc.pl
+* All C header files is guarded
+* Compiled using this command "gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic"
 
 ## Author
 Heindrick Cheung
