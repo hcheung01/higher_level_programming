@@ -22,12 +22,18 @@ File|Task
 4-list_division.py | Divides element by element 2 lists
 5-raise_exception.py | raises a type exception
 6-raise_exception_msg.py | raises a name exception with a message
+100-safe_print_integer_err.py | function that prints an integer
+101-safe_function.py | function that executes a function safely
 
 ## Directories
 ---
 Directory Name | Description
 ---|---
 0x05-python-exceptions | Main folder with all Python files
+
+## More Info for Python programs
+* All Python files is PEP 8(version 1.7) formatted
+* Python Scripts - first line of every file is exactly be exactly #!/usr/bin/python3 and executable
 
 ## Author
 Heindrick Cheung
