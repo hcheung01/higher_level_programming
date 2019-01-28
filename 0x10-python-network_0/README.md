@@ -37,7 +37,10 @@ File|Task
 ---
 Directory Name | Description
 ---|---
-0x10-python-network_0
+0x10-python-network_0 | main directory with all scripts, Python and text files
+
+## More Info for Bash Scripts
+* For Bash files, the first line of all my files should is exactly #!/bin/bash and executable
 
 ## Author
 Heindrick Cheung
