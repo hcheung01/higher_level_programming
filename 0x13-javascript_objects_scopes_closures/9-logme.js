@@ -6,5 +6,5 @@ exports.logMe = function (item) {
     console.log(num + ': ' + item);
     num += 1;
   }
-  return print();
+  print();
 };
