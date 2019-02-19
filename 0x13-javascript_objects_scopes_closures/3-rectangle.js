@@ -11,5 +11,5 @@ module.exports = class Rectangle {
     for (let j = 0; j < this.height; j++) {
       console.log(Array(this.width + 1).join('X'));
     }
-  };
+  }
 };
