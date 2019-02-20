@@ -2,6 +2,7 @@
 const request = require('request');
 const f = 'http://swapi.co/api/films/';
 request(f, function (error, response, body) {
+  if (error) { console.log(error); }
   const results = JSON.parse(body).results;
   let ct = 0;
   for (let i = 0; i < results.length; i++) {
@@ -12,5 +13,5 @@ request(f, function (error, response, body) {
       }
     }
   }
-  console.log(ct || error);
+  console.log(ct);
 });
