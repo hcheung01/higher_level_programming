@@ -6,12 +6,13 @@ request(url, function (error, response, body) {
   let ob = {};
   body = JSON.parse(body);
   for (let i = 0; i < body.length; i++) {
-    if (ob[body[i].userId]) {
-      ob[body[i].userId] += 1;
-    } else {
+    let id = body[i].userId;
+    console.log(id);
+    if (!ob[body[i].userId]) {
       ob[body[i].userId] = 1;
+    } else if (ob[body[i].userId]) {
+      ob[body[i].userId] += 1;
     }
   }
-    console.log(ob);
-
+  console.log(ob);
 });
