@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 let fs = require('fs');
 
 let data = process.argv[3];
