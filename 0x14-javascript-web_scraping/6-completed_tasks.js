@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 const request = require('request');
 const url = process.argv[2];
 request(url, function (error, response, body) {
@@ -11,7 +11,6 @@ request(url, function (error, response, body) {
     } else {
       ob[body[i].userId] = 1;
     }
-    console.log(body);
     console.log(ob);
   }
 });
