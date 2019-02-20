@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 const req = require('request');
 const id = parseInt(process.argv[2]);
 req('https://swapi.co/api/films', function (error, response, body) {
