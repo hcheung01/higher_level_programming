@@ -7,11 +7,13 @@ request(url, function (error, response, body) {
   body = JSON.parse(body);
   for (let i = 0; i < body.length; i++) {
     let id = body[i].userId;
-    console.log(id);
-    if (!ob[body[i].userId]) {
-      ob[body[i].userId] = 1;
-    } else if (ob[body[i].userId]) {
-      ob[body[i].userId] += 1;
+    let completed = body[i].completed;
+    if (completed) {
+      if (!ob[id]) {
+        ob[body[i].userId] = 1;
+      } else {
+        ob[body[i].userId] += 1;
+      }
     }
   }
   console.log(ob);
