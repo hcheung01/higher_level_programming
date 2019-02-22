@@ -8,8 +8,12 @@ $.ajax({
 })
 
 .done(function (json) {
-  $('DIV#hello').text('In English is: "' + json.hello + '"')
+  $('DIV#hello').text(json.hello)
   .animate({
     'font-size': '100px'
+  });
+
+  $('header').text('In English is: ').animate({
+    'font-size': '80px'
   });
 });
