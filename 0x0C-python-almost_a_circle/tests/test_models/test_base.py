@@ -38,13 +38,13 @@ class TestBaseClass(unittest.TestCase):
 
     def test_output(self):
         """test to stdout"""
-        school = "Holberton"
+        school = "Coding"
         language = "Python3"
         testing = "Unittest"
         expected_output = "{} {} {}".format(school, language, testing)
 
         with patch('sys.stdout', new=StringIO()) as fake_out:
-            print("Holberton Python3 Unittest")
+            print("Coding Python3 Unittest")
             self.assertEqual(fake_out.getvalue().strip(), expected_output)
 
     def test_base_cls_doc(self):

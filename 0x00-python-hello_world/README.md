@@ -11,7 +11,7 @@ This project in the High Level Programming series is about:
 * How to print text and variables using print
 * How to use strings
 * What are indexing and slicing in Python
-* What is the official Holberton Python coding style and how to check your code with PEP 8
+* What is the official Coding Python coding style and how to check your code with PEP 8
 
 ## Files
 ---
@@ -23,7 +23,7 @@ File|Task
 3-print_number.py | Complete a source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line
 4-print_float.py | print the float stored in the variable number with a precision of 2 digits.
 5-print_string.py | print 3 times a string stored in the variable str, followed by its first 9 characters.
-6-concat.py | print Welcome to Holberton School!
+6-concat.py | print Welcome to Coding School!
 7-edges.py | completed provided source code to print specific string
 8-concat_edges.py | print object-oriented programming with Python, followed by a new line.
 9-easter_egg.py | Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.

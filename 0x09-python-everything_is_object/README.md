@@ -50,7 +50,7 @@ File|Question
 26-answer.txt
 27-answer.txt
 28-answer.txt
-100-magic_string.py | function magic_string() that returns a string “Holberton” n times the number of the iteration 
+100-magic_string.py | function magic_string() that returns a string “Coding” n times the number of the iteration 
 101-locked_class.py | class LockedClass with no class or object attribute, that prevents the user from dynamically creating new instance attributes, except if the new instance attribute is called first_name
 103-line1.txt, 103-line2.txt
 104-line1.txt, 104-line2.txt, 104-line3.txt, 104-line4.txt, 104-line5.txt
