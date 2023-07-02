@@ -4,7 +4,7 @@ Databases
 AirBnB clone
 
 ## About
-This repository is one of the several tracks that I've been learning to become a Full Stack Software Engineer at Coding School and below is a tree that displays files in this directory:
+This repository is one of the several tracks that I've been learning to become a Full Stack Software Engineer and below is a tree that displays files in this directory:
 
 ## Author
 All files are maintained and owned by Heindrick Cheung
