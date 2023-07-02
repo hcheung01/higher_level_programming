@@ -1,4 +1,4 @@
-## Higher-Level programming track at Coding School focusing on:
+## Higher-Level programming track focusing on:
 Python
 Databases
 AirBnB clone
